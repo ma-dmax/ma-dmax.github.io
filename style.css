@@ -1,0 +1,136 @@
+/* ===== RESET / BASE ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* ===== LAYOUT ===== */
+header,
+section,
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+  color: #0a3cff; /* resume blue */
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #0a3cff;
+  color: #0a3cff;
+}
+
+h4 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #0a3cff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== HERO ===== */
+.hero p {
+  max-width: 700px;
+}
+
+.hero-links {
+  margin-top: 20px;
+}
+
+.hero-links a {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* ===== ABOUT ===== */
+.about p {
+  max-width: 750px;
+}
+
+/* ===== PROJECTS ===== */
+.projects {
+  padding-top: 20px;
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project p {
+  margin: 5px 0 10px 0;
+  max-width: 800px;
+}
+
+.project .tech {
+  font-size: 14px;
+  color: #555;
+}
+
+.project-links a {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* ===== COURSEWORK ===== */
+.coursework p {
+  max-width: 750px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  header,
+  section,
+  footer {
+    padding: 30px 15px;
+  }
+}
