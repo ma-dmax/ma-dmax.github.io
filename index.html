@@ -2,168 +2,418 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Maksym Horbachov | Frontend / Web Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Junior Frontend / Web Developer portfolio. JavaScript, HTML, CSS.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Portfolio of Maksym Horbachov, an entry-level software developer working across web, desktop, and hardware-connected applications."
+  >
+
+  <title>Maksym Horbachov | Software Developer</title>
+
   <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+>
+  <script src="script.js" defer></script>
 </head>
+
 <body>
+  <a class="skip-link" href="#main-content">
+    Skip to content
+  </a>
 
-  <!-- HERO -->
-  <header class="hero">
-    <h1>Hi, I'm Maksym.</h1>
-    <h2>Entry-Level Software Developer</h2>
+  <nav class="section-nav" aria-label="Page sections">
+  <a
+    class="section-nav__link is-active"
+    href="#home"
+    data-section="home"
+  >
+    <span class="section-nav__handle">
+      <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+      <small>01</small>
+    </span>
 
-    <p>
-      I build practical software across web, desktop,
-      and hardware-connected applications. 
-      My current focus is web development, supported by a strong foundation in computer science, C++, C#, 
-      JavaScript, and Linux.
-    </p>
+    <span class="section-nav__label">
+      Home
+    </span>
+  </a>
 
-    <div class="hero-links">
-      <a href="#projects">View Projects</a>
-      <a href="resume.pdf" target="_blank">Resume (PDF)</a>
-      <a href="https://github.com/ma-dmax" target="_blank">GitHub</a>
-      
-    </div>
-  </header>
+  <a
+    class="section-nav__link"
+    href="#projects"
+    data-section="projects"
+  >
+    <span class="section-nav__handle">
+      <i class="bi bi-tools" aria-hidden="true"></i>
+      <small>02</small>
+    </span>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h3>About</h3>
-    <p>I’m an entry-level software developer based in Sacramento, California. I have completed the degree requirements for an Associate of Science in Computer Science at Sacramento City College and am continuing coursework toward a Web Developer A.S. and university transfer.
+    <span class="section-nav__label">
+      Projects
+    </span>
+  </a>
 
-    </p>
+  <a
+    class="section-nav__link"
+    href="#about"
+    data-section="about"
+  >
+    <span class="section-nav__handle">
+      <i class="bi bi-person-fill" aria-hidden="true"></i>
+      <small>03</small>
+    </span>
 
-<p>My strongest current experience is in web development, where I work with JavaScript, HTML, CSS, responsive interfaces, browser APIs, and asynchronous data. I have also built C++ coursework projects and a C# desktop application that communicates with Arduino hardware through a serial connection.</p> 
+    <span class="section-nav__label">
+      About
+    </span>
+  </a>
 
-<p>I’m not tied to a single language or stack. I’m interested in entry-level opportunities where I can contribute to real software, learn the tools used by the team, and grow across software development and IT.</p>
+  <a
+    class="section-nav__link"
+    href="#contact"
+    data-section="contact"
+  >
+    <span class="section-nav__handle">
+      <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+      <small>04</small>
+    </span>
 
-  </section>
+    <span class="section-nav__label">
+      Contact
+    </span>
+  </a>
+</nav>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <h3>Featured Projects</h3>
+  <main id="main-content" class="page">
+    <section
+      id="home"
+      class="hero page-section"
+      aria-labelledby="hero-title"
+    >
 
-    <!-- Project 1 -->
-    <article class="project">
-    <h4>Mood Journal Web App</h4>
-    <p>
-        Small journaling web application that allows users to select a mood using emoji,
-        choose a date, and write journal entries with optional auto-generated text.
-        Entries are saved locally and displayed in a history list.
+      <h1 id="hero-title">
+        Maksym Horbachov
+      </h1>
+
+      <p class="hero__role">
+        Entry-Level Software Developer
+      </p>
+
+      <p class="hero__intro">
+        I build practical software across web, desktop, and
+        hardware-connected applications. Web development is my current
+        focus, supported by a strong foundation in computer science,
+        C++, C#, JavaScript, and Linux.
+      </p>
+    </section>
+
+    <section
+      id="projects"
+      class="projects page-section"
+      aria-labelledby="projects-title"
+    >
+      <div class="section-heading">
         
-    </p>
-    <p>Built with a focus on state management, event handling, and dynamic UI updates without page reloads.</p>
-    <p class="tech">JavaScript · HTML · CSS · jQuery · Fetch API</p>
-    <div class="project-links">
-        <a href="https://scc-cisw.com/cisw400-fa25/mhorbachov/final/" target="_blank">Live Demo</a>
-  <!--       <a href="PASTE_GITHUB_LINK_HERE" target="_blank">Source</a>-->
-    </div>
-    </article>
 
-    <!-- Project 2 -->
-    <article class="project">
-      <h4>Pig Game</h4>
-      <p>
-        Browser-based dice game implementing game state management,
-        event-driven logic, and interactive user feedback.
-      </p>
-      <p class="tech">JavaScript · HTML · CSS</p>
-      <div class="project-links">
-        <a href="https://scc-cisw.com/cisw400-fa25/mhorbachov/pig_game/" target="_blank">Live Demo</a>
-       <!-- <a href="PASTE_GITHUB_LINK_HERE" target="_blank">Source</a> -->
+        <h2 id="projects-title">
+          My projects
+        </h2>
+
+        <p>
+          Hover, focus, or select a project to see what is inside.
+        </p>
       </div>
-    </article>
 
-    <!-- Project 3 -->
-    <article class="project">
-      <h4>Async Form Submission</h4>
-      <p>
-        Form handling project demonstrating asynchronous data submission,
-        validation, and dynamic UI updates using fetch/AJAX patterns.
-      </p>
-      <p class="tech">JavaScript · HTML · CSS</p>
-      <div class="project-links">
-        <a href="https://scc-cisw.com/cisw400-fa25/mhorbachov/Asynchronous_Form_Data_3/" target="_blank">Live Demo</a>
-        <!--<a href="PASTE_GITHUB_LINK_HERE" target="_blank">Source</a>-->
+      <div class="project-carousel">
+        <article class="project-panel" aria-live="polite">
+          <div class="project-panel__copy">
+            <p
+              id="project-number"
+              class="project-panel__number"
+            >
+              01 / 03
+            </p>
+
+            <h3 id="project-title">
+              Cursor Trail Demo
+            </h3>
+
+            <p id="project-description">
+              A customizable cursor-trail interaction with real-time
+              controls for trail count, size, color, opacity, and scale.
+            </p>
+
+            <p
+              id="project-tech"
+              class="project-panel__tech"
+            >
+              JavaScript · HTML · CSS · DOM
+            </p>
+
+            <div
+              id="project-links"
+              class="project-panel__links"
+            >
+              <a
+                class="project-link project-link--primary"
+                href="https://ma-dmax.github.io/cursor-trail-v1/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open demo
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                class="project-link"
+                href="https://github.com/ma-dmax/cursor-trail-v1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View code
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div
+            id="project-art"
+            class="project-art project-art--cursor"
+            aria-hidden="true"
+          >
+            <div class="mock-window">
+              <div class="mock-window__bar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="mock-window__canvas">
+                <span class="trail-dot trail-dot--one"></span>
+                <span class="trail-dot trail-dot--two"></span>
+                <span class="trail-dot trail-dot--three"></span>
+                <span class="trail-dot trail-dot--four"></span>
+
+                <div class="mock-controls">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="carousel-controls">
+          <button
+            id="project-prev"
+            class="carousel-arrow"
+            type="button"
+            aria-label="Previous project"
+          >
+            <span aria-hidden="true">←</span>
+          </button>
+
+          <div
+            class="project-thumbnails"
+            role="tablist"
+            aria-label="Choose a project"
+          >
+            <button
+              class="project-thumbnail is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="project-title"
+              data-project="0"
+            >
+              <span
+                class="project-thumbnail__visual project-thumbnail__visual--cursor"
+                aria-hidden="true"
+              >
+                <i></i>
+                <i></i>
+                <i></i>
+              </span>
+
+              <span>Cursor Trail</span>
+            </button>
+
+            <button
+              class="project-thumbnail"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="project-title"
+              data-project="1"
+            >
+              <span
+                class="project-thumbnail__visual project-thumbnail__visual--mood"
+                aria-hidden="true"
+              >
+                <i>🙂</i>
+                <i></i>
+                <i></i>
+              </span>
+
+              <span>Mood Journal</span>
+            </button>
+
+            <button
+              class="project-thumbnail"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="project-title"
+              data-project="2"
+            >
+              <span
+                class="project-thumbnail__visual project-thumbnail__visual--arduino"
+                aria-hidden="true"
+              >
+                <i></i>
+                <i></i>
+                <i></i>
+              </span>
+
+              <span>Arduino LEDs</span>
+            </button>
+          </div>
+
+          <button
+            id="project-next"
+            class="carousel-arrow"
+            type="button"
+            aria-label="Next project"
+          >
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+
+        <div
+          class="carousel-position"
+          aria-hidden="true"
+        >
+          <span class="is-active"></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-    </article>
+    </section>
 
-    <!-- Project 4 -->
-    <article class="project">
-      <h4>Studio Ghibli Fan Site</h4>
-      <p>
-        Lightweight content-driven website focused on layout, UI structure,
-        and clean presentation of visual and textual information.
-      </p>
-      <p class="tech">HTML · CSS · JavaScript</p>
-      <div class="project-links">
-        <a href="https://scc-cisw.com/cisw400-fa25/mhorbachov/Studio_Ghibli_Part_1/" target="_blank">Live Demo</a>
+    <section
+      id="about"
+      class="about page-section"
+      aria-labelledby="about-title"
+    >
+      <div class="section-heading">
+    
+
+        <h2 id="about-title">
+          About me
+        </h2>
       </div>
-    </article>
 
-    <!-- Project 5 -->
-    <article class="project">
-      <h4>Cursor Trail Demo</h4>
-      <p>
-        Interactive cursor trail effect built with vanilla JavaScript.
-        Users can customize trail count, size, color, opacity, and scale
-        in real time through a control panel.
-      </p>
-      <p>
-        The project focuses on event handling, animation timing,
-        dynamic DOM updates, and performance-conscious rendering.
-      </p>
-      <p class="tech">JavaScript · HTML · CSS</p>
-      <div class="project-links">
-        <a href="https://ma-dmax.github.io/cursor-trail-v1/" target="_blank">Live Demo</a>
-        <!--<a href="https://github.com/ma-dmax/cursor-trail-v1" target="_blank">Source</a>-->
+      <div class="about__grid">
+        <div class="about__copy">
+          <p>
+            I am an entry-level software developer based in Sacramento,
+            California. I have completed the degree requirements for an
+            Associate of Science in Computer Science at Sacramento City
+            College and am continuing coursework toward a Web Developer
+            A.S. and university transfer.
+          </p>
+
+          <p>
+            My strongest current experience is in web development, but
+            I am not tied to a single language or stack. I am looking
+            for an entry-level opportunity where I can contribute to
+            real software, learn the team's tools, and keep growing
+            across software development and IT.
+          </p>
+        </div>
+
+        <aside
+          class="foundation-card"
+          aria-labelledby="foundation-title"
+        >
+          <p class="foundation-card__label">
+            Computer science foundation
+          </p>
+
+          <h3 id="foundation-title">
+            Built on more than frontend.
+          </h3>
+
+          <p>
+            Data structures, algorithms, C++ object-oriented programming,
+            assembly and computer organization, databases, Linux
+            administration, discrete structures, and calculus.
+          </p>
+        </aside>
       </div>
-    </article>
+    </section>
 
-    <!-- Project 6 -->
-    <article class="project">
-      <h4>Advanced Form Validation</h4>
-      <p>
-        Client-side form validation with edge case handling,
-        user feedback, and improved UX patterns.
+    <section
+      id="contact"
+      class="contact page-section"
+      aria-labelledby="contact-title"
+    >
+      <p class="eyebrow">
+        Contact
       </p>
-      <p class="tech">JavaScript · HTML · CSS</p>
-      <div class="project-links">
-        <a href="https://scc-cisw.com/cisw400-fa25/mhorbachov/Advanced_Form_Validation/" target="_blank">Live Demo</a>
+
+      <h2 id="contact-title">
+        Open to entry-level opportunities.
+      </h2>
+
+      <p>
+        If you think I could be a good fit for your team,
+        I would be glad to talk.
+      </p>
+
+      <div class="contact__links">
+        <a href="mailto:horbachov.maksym.2005@gmail.com">
+          Email me
+        </a>
+
+        <a
+          href="https://github.com/ma-dmax"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub ↗
+        </a>
+
+        <a
+          href="resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Resume ↗
+        </a>
       </div>
-    </article>
+    </section>
+  </main>
 
-  </section>
-
-  <!-- COURSEWORK -->
-  <section class="coursework">
-    <h3>Coursework & Exercises</h3>
-    <p>
-      Additional coursework projects focused on practicing JavaScript,
-      DOM manipulation, and common UI patterns.
-    </p>
-    <a href="https://scc-cisw.com/cisw400-fa25/mhorbachov/">View full list of exercises →</a>
-  </section>
-
-  <!-- FOOTER -->
   <footer class="footer">
     <p>
-      Email:
-      <a href="mailto:horbachov.maksym.2005@gmail.com">
-        horbachov.maksym.2005@gmail.com
-      </a>
+      Designed and built by Maksym Horbachov.
     </p>
     <p>
-      GitHub:
-      <a href="https://github.com/ma-dmax" target="_blank">
-        github.com/ma-dmax
-      </a>
+      Built with vanilla HTML, CSS, and JavaScript.
+Source code available on GitHub.
+    </p>
+
+    <p>
+      © 2026
     </p>
   </footer>
-
 </body>
 </html>
-
