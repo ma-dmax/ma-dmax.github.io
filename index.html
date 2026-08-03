@@ -119,14 +119,14 @@
       aria-labelledby="projects-title"
     >
       <div class="section-heading">
-        
+
 
         <h2 id="projects-title">
           My projects
         </h2>
 
         <p>
-          Hover, focus, or select a project to see what is inside.
+          Select a project to see a real preview and the work behind it.
         </p>
       </div>
 
@@ -182,32 +182,37 @@
             </div>
           </div>
 
-          <div
-            id="project-art"
-            class="project-art project-art--cursor"
-            aria-hidden="true"
-          >
-            <div class="mock-window">
-              <div class="mock-window__bar">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+          <figure class="project-media">
+            <button
+              id="project-image-open"
+              class="project-media__open"
+              type="button"
+              aria-label="Open project image in full screen"
+            >
+              <img
+                id="project-image"
+                class="project-media__image"
+                src="assets/project-media/cursor-trail/cursor-trail-effect-and-controls.png"
+                alt="Cursor Trail Demo with the orange trail effect and control panel"
+              >
+              <span class="project-media__hint">
+                Click to expand
+              </span>
+            </button>
 
-              <div class="mock-window__canvas">
-                <span class="trail-dot trail-dot--one"></span>
-                <span class="trail-dot trail-dot--two"></span>
-                <span class="trail-dot trail-dot--three"></span>
-                <span class="trail-dot trail-dot--four"></span>
+            <figcaption
+              id="project-image-caption"
+              class="project-media__caption"
+            >
+              Interactive effect and controls
+            </figcaption>
 
-                <div class="mock-controls">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-            </div>
-          </div>
+            <div
+              id="project-media-controls"
+              class="project-media__controls"
+              aria-label="Project media"
+            ></div>
+          </figure>
         </article>
 
         <div class="carousel-controls">
@@ -233,14 +238,11 @@
               aria-controls="project-title"
               data-project="0"
             >
-              <span
-                class="project-thumbnail__visual project-thumbnail__visual--cursor"
-                aria-hidden="true"
+              <img
+                class="project-thumbnail__visual"
+                src="assets/project-media/cursor-trail/cursor-trail-effect-and-controls.png"
+                alt=""
               >
-                <i></i>
-                <i></i>
-                <i></i>
-              </span>
 
               <span>Cursor Trail</span>
             </button>
@@ -253,14 +255,11 @@
               aria-controls="project-title"
               data-project="1"
             >
-              <span
-                class="project-thumbnail__visual project-thumbnail__visual--mood"
-                aria-hidden="true"
+              <img
+                class="project-thumbnail__visual"
+                src="assets/project-media/mood-journal/mood-journal-entry-generation-workflow.png"
+                alt=""
               >
-                <i>🙂</i>
-                <i></i>
-                <i></i>
-              </span>
 
               <span>Mood Journal</span>
             </button>
@@ -273,14 +272,11 @@
               aria-controls="project-title"
               data-project="2"
             >
-              <span
-                class="project-thumbnail__visual project-thumbnail__visual--arduino"
-                aria-hidden="true"
+              <img
+                class="project-thumbnail__visual"
+                src="assets/project-media/arduino-led-controller/arduino-led-controller-main-control-panel.png"
+                alt=""
               >
-                <i></i>
-                <i></i>
-                <i></i>
-              </span>
 
               <span>Arduino LEDs</span>
             </button>
@@ -307,13 +303,71 @@
       </div>
     </section>
 
+    <div
+      id="media-lightbox"
+      class="media-lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="media-lightbox-caption"
+      hidden
+    >
+      <button
+        id="media-lightbox-backdrop"
+        class="media-lightbox__backdrop"
+        type="button"
+        aria-label="Close image viewer"
+      ></button>
+
+      <div class="media-lightbox__content">
+        <button
+          id="media-lightbox-close"
+          class="media-lightbox__close"
+          type="button"
+          aria-label="Close image viewer"
+        >
+          &times;
+        </button>
+
+        <button
+          id="media-lightbox-prev"
+          class="media-lightbox__arrow media-lightbox__arrow--previous"
+          type="button"
+          aria-label="Previous project image"
+        >
+          &larr;
+        </button>
+
+        <figure class="media-lightbox__figure">
+          <img
+            id="media-lightbox-image"
+            class="media-lightbox__image"
+            src=""
+            alt=""
+          >
+          <figcaption
+            id="media-lightbox-caption"
+            class="media-lightbox__caption"
+          ></figcaption>
+        </figure>
+
+        <button
+          id="media-lightbox-next"
+          class="media-lightbox__arrow media-lightbox__arrow--next"
+          type="button"
+          aria-label="Next project image"
+        >
+          &rarr;
+        </button>
+      </div>
+    </div>
+
     <section
       id="about"
       class="about page-section"
       aria-labelledby="about-title"
     >
       <div class="section-heading">
-    
+
 
         <h2 id="about-title">
           About me
@@ -365,6 +419,7 @@
       class="contact page-section"
       aria-labelledby="contact-title"
     >
+      <div class="contact__content">
       <p class="eyebrow">
         Contact
       </p>
@@ -398,6 +453,7 @@
         >
           Resume ↗
         </a>
+      </div>
       </div>
     </section>
   </main>
